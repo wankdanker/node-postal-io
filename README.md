@@ -40,8 +40,8 @@ api
   * **opts.host** - _string_ - the url to the postal server
   * **opts.key** - _string_ - the API key from the postal server
 * **postal.send(email, callback)** - send an email
-  * ** email ** - _hash_ - see [postal docs](https://atech.github.io/postal-api/controllers/send/message.html) for options
-  * ** callback(err, result) ** - _function_ - callback function called when complete
+  * **email** - _hash_ - see [postal docs](https://atech.github.io/postal-api/controllers/send/message.html) for options
+  * **callback(err, result)** - _function_ - callback function called when complete
 
 events
 ------
