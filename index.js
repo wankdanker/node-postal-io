@@ -73,7 +73,9 @@ Postal.prototype.send = function (email, cb) {
       request.error = err;
       request.result = result;
 
-      self.emit('send:after', request, cb);
+      self.emit('send:after', request, function () {
+        return cb(err, result);
+      });
     });
   });
 };
